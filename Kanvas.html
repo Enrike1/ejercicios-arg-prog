@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  		<meta charset="utf-8">
+	    <title>Ejercicio "Canvas"</title><link rel="stylesheet" type="text/css" href="estilos.css">
+
+  </head>
+
+
+<body>
+
+<h1>Ejercicio "Canvas"</h1>
+
+<p>Un "Canvas" es un área rectangular en una página HTML.<br> 
+De forma predeterminada, un "Canvas" no tiene borde ni contenido.</p> 
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(100,100);
+ctx.stroke();
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(100,100);
+ctx.lineTo(200,0);
+ctx.stroke();
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.font = "22px Arial";
+ctx.fillText("Remitente: Enrique",10,50);
+</script>
+
+</body>
+</html>
